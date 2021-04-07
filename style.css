@@ -1,0 +1,135 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #e8ebf3;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 65%;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f7fa;
+  padding: 2em;
+  border-radius: 50px;
+}
+.list-create {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  flex: 1;
+}
+.create-button {
+  width: 150px;
+  font-size: 16px;
+  align-self: center;
+  background-color: #2f58e2;
+  border: none;
+  color: #f5f7fa;
+  padding: 15px 5px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 30px #2f58e2;
+}
+.list-create-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: #2f58e2;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.list-create-form input {
+  border: none;
+  padding: 10px 5px;
+  background-color: #2f58e2;
+  color: #f5f7fa;
+  border-bottom: 1px solid #f5f7fa;
+  width: 100%;
+}
+.list-create-form input:focus {
+  outline: none;
+}
+.list-create-form input::placeholder {
+  color: #d7d7d8;
+}
+.priority-text {
+  color: #f5f7fa;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.priority-button {
+  background-color: #2f58e2;
+  color: #f5f7fa;
+  border: 0.5px solid #f5f7fa;
+  border-radius: 5px;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+/*Tasks part*/
+
+.list-wrapper {
+  flex: 1;
+}
+
+.list-filter {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.list-filter-link {
+  color: grey;
+}
+.active {
+  color: #000;
+  font-weight: bold;
+}
+.list-wrapper small {
+  color: grey;
+}
+.list-filter-item {
+  margin-right: 10px;
+  color: grey;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #e8ebf3;
+  border-radius: 30px;
+  padding: 1rem;
+  box-shadow: 1px 3px 30px #bfc6d6;
+}
+.list-check {
+  flex: 1;
+}
+.list-task {
+  flex: 7;
+  border-left: 5px solid red;
+  padding-left: 7px;
+  border-radius: 5px;
+}
+.close-button {
+  font-size: 24px;
+  color: #bfc6d6;
+}
+.close-button:hover {
+  cursor: pointer;
+}
