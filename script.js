@@ -1,5 +1,7 @@
 
 
+let today = new Date().toLocaleDateString()
+document.querySelector('.date').textContent = today
 
 
 document.querySelector(".create-button").addEventListener('click', function () {
