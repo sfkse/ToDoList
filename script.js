@@ -24,9 +24,11 @@ document.querySelector(".create-button").addEventListener('click', function () {
         borderClass = 'verylow-priority'
     }
 
+    if (taskName !== "") {
 
 
-    let task = `
+
+        let task = `
     <div class="list-item ">
          <div class="list-check">
              <input type="checkbox" class="check-item " name="">
@@ -43,12 +45,12 @@ document.querySelector(".create-button").addEventListener('click', function () {
 
     `
 
-    document.querySelector('.list-item-wrapper').innerHTML += task
-    document.querySelector('.task-name').value = ""
-    document.querySelector('#priority-4').checked = true
+        document.querySelector('.list-item-wrapper').innerHTML += task
+        document.querySelector('.task-name').value = ""
+        document.querySelector('#priority-4').checked = true
 
 
-
+    }
     const check = document.querySelectorAll(".list-check input");
     check.forEach((item, index) => {
         item.addEventListener('click', () => {
