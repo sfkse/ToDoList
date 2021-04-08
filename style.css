@@ -14,6 +14,9 @@ li {
 a {
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
 .container {
   width: 65%;
   margin: 10rem auto;
@@ -27,7 +30,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
-  flex: 1;
+  flex: 0.75;
 }
 .create-button {
   width: 150px;
@@ -38,8 +41,10 @@ a {
   color: #f5f7fa;
   padding: 15px 5px;
   border-radius: 20px;
-  box-shadow: 1px 3px 30px #2f58e2;
+  box-shadow: 1px 15px 30px #6d81c2;
+  cursor: pointer;
 }
+
 .list-create-form {
   margin-top: 3rem;
   display: flex;
@@ -48,6 +53,7 @@ a {
   background-color: #2f58e2;
   padding: 2rem;
   border-radius: 10px;
+  box-shadow: 1px 15px 20px #6d81c2;
 }
 .list-create-form input {
   border: none;
@@ -73,13 +79,13 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.priority-button {
-  background-color: #2f58e2;
-  color: #f5f7fa;
-  border: 0.5px solid #f5f7fa;
-  border-radius: 5px;
-  padding: 2px 20px;
-  cursor: pointer;
+.button-group label {
+  color: #d7d7d8;
+}
+.priority-button:hover {
+  outline: none;
+  background-color: #f5f7fa;
+  color: #2f58e2;
 }
 
 /*Tasks part*/
@@ -88,18 +94,10 @@ a {
   flex: 1;
 }
 
-.list-filter {
-  display: flex;
-  margin-bottom: 20px;
-  margin-top: 10px;
+.list-item-wrapper {
+  margin-top: 20px;
 }
-.list-filter-link {
-  color: grey;
-}
-.active {
-  color: #000;
-  font-weight: bold;
-}
+
 .list-wrapper small {
   color: grey;
 }
@@ -122,7 +120,7 @@ a {
 }
 .list-task {
   flex: 7;
-  border-left: 5px solid red;
+
   padding-left: 7px;
   border-radius: 5px;
 }
@@ -132,4 +130,32 @@ a {
 }
 .close-button:hover {
   cursor: pointer;
+}
+
+/*Classes that will be added via js*/
+.active {
+  color: #000;
+  font-weight: bold;
+}
+.done {
+  text-decoration: line-through;
+  color: grey;
+}
+.d-none {
+  display: none;
+}
+.high-priority {
+  border-left: 5px solid red;
+}
+.medium-priority {
+  border-left: 5px solid orange;
+}
+.low-priority {
+  border-left: 5px solid yellow;
+}
+.verylow-priority {
+  border-left: 5px solid blue;
+}
+.completed {
+  border-left: 5px solid greenyellow;
 }

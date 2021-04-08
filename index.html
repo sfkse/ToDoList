@@ -15,14 +15,20 @@
         <div class="list-create">
             <button class="create-button">+ Create Task</button>
             <div class="list-create-form">
-                <input type="text" placeholder=" Task Name">
+                <input class="task-name" type="text" placeholder="Task Name">
 
                 <p class="priority-text">Priority</p>
                 <div class="button-group">
-                    <button class="priority-button">High</button>
-                    <button class="priority-button">Medium</button>
-                    <button class="priority-button">Low</button>
-                    <button class="priority-button">Very Low</button>
+
+
+                    <label for="priority-1"> High<input type="radio" name="priority" id="priority-1" class="priority"
+                            value="High"></label>
+                    <label for="priority-2"> Medium<input type="radio" name="priority" id="priority-2" class="priority"
+                            value="Medium"></label>
+                    <label for="priority-3"> Low<input type="radio" name="priority" id="priority-3" class="priority"
+                            value="Low"></label>
+                    <label for="priority-4"> Very Low<input type="radio" name="priority" id="priority-4"
+                            class="priority" value="Very Low" checked></label>
                 </div>
 
             </div>
@@ -33,51 +39,7 @@
                 <h1>Today Tasks</h1>
             </div>
 
-
-            <ul class="list-filter">
-                <li class="list-filter-item "><a href="" class="list-filter-link active"> All</a></li>
-                <li class="list-filter-item"><a href="" class="list-filter-link"> Completed</a></li>
-                <li class="list-filter-item"><a href="" class="list-filter-link"> Uncompleted</a></li>
-            </ul>
-            <div class="list-item">
-                <div class="list-check">
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div class="list-task">
-                    <h3>Add More Content on Profile</h3>
-                    <small>High priority</small>
-                </div>
-                <div class="close-button">
-                    x
-                </div>
-
-            </div>
-            <div class="list-item">
-                <div class="list-check">
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div class="list-task">
-                    <h3>Add More Content on Profile</h3>
-                    <small>High priority</small>
-                </div>
-                <div class="close-button">
-                    x
-                </div>
-
-            </div>
-            <div class="list-item">
-                <div class="list-check">
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div class="list-task">
-                    <h3>Add More Content on Profile</h3>
-                    <small>High priority</small>
-                </div>
-                <div class="close-button">
-                    x
-                </div>
-
-            </div>
+            <div class="list-item-wrapper"></div>
 
         </div>
 
